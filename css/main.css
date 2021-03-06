@@ -1,0 +1,14 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: transparent url(/css/images/background_small.jpg) center center
+    no-repeat;
+}
