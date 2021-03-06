@@ -7,13 +7,13 @@
     <title>Weather App</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,900;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,900;1,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <header>
+    <header class="weather__logo">
       <h1>My Weather App</h1>
     </header>
     <main>
@@ -28,7 +28,7 @@
         </div>
         <div class="weather__data">
           <div class="weather__icon">
-            <img src="img/01d.jpg" alt="" />
+            <img src="img/01d.png" alt="" />
           </div>
           <div class="weather__parameters">
             <div class="weather__temperature">
@@ -48,6 +48,8 @@
                   fill="white"
                 />
               </svg>
+
+              <span class="weather__temperature--value">18 °C</span>
             </div>
             <div class="weather__wind">
               <svg
@@ -62,6 +64,7 @@
                   fill="white"
                 />
               </svg>
+              <span class="weather__wind--value">44 km/s</span>
             </div>
             <div class="weather__humidity">
               <svg
@@ -76,6 +79,7 @@
                   fill="white"
                 />
               </svg>
+              <span class="weather__humidity--value">88 %</span>
             </div>
           </div>
         </div>
@@ -84,7 +88,7 @@
         <input type="text" placeholder="Search for a city" />
       </div>
     </main>
-    <footer>
+    <footer class="weather__footer">
       <div>
         <svg
           width="16"
@@ -102,7 +106,7 @@
             fill="white"
           />
         </svg>
-        photo by brobro
+        <span>Photo by Brandon Siu on Unsplash</span>
       </div>
       <div>
         <svg
