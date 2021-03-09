@@ -22,6 +22,11 @@ body {
   background: transparent url(/css/images/background_small.jpg) center center
     no-repeat;
 }
+main,
+footer {
+  min-width: 620px;
+  margin: auto;
+}
 img {
   display: block;
   max-width: 100%;
@@ -106,4 +111,31 @@ svg {
 }
 .weather__footer {
   font-size: 0.875rem;
+}
+
+@media screen and (min-width: 576px) {
+  body {
+    background-image: url(/css/images/background_large.jpg);
+  }
+  .weather__header h2 {
+    font-size: 4rem;
+  }
+  .weather__header p {
+    font-size: 1.5rem;
+  }
+  .weather__icon {
+    margin-right: 2.5rem;
+  }
+  .weather__icon img {
+    width: 12.5rem;
+  }
+  .weather__parameters {
+    min-height: 12.5rem;
+    font-size: 2rem;
+    margin-left: 2.5rem;
+  }
+  .weather__parameters svg {
+    width: 2rem;
+    height: 2rem;
+  }
 }
