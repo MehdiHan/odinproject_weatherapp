@@ -99,8 +99,12 @@ const updateData = async (event) => {
     );
     const weatherWind = document.querySelector('.weather__wind--value');
     const weatherHumidity = document.querySelector('.weather__humidity--value');
-    console.log(responseData.name);
-    weatherHeader.textContent = `${responseData.name}, ${responseData.sys.country}`;
+    const city = responseData.name;
+    const cityCondition =
+      city.startsWith('Arrondissement') === true
+        ? city.slice(18, city.length)
+        : city;
+    weatherHeader.textContent = `${cityCondition}, ${responseData.sys.country}`;
     weatherBaseline.textContent = `${responseData.weather[0].description}`;
     weatherIcon.src = `img/${responseData.weather[0].icon}.png`;
     weatherTemperature.textContent = `${Math.round(responseData.main.temp)} °C`;
