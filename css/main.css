@@ -22,11 +22,7 @@ body {
   background: transparent url(images/background_small.jpg) center center
     no-repeat;
 }
-main,
-footer {
-  min-width: 620px;
-  margin: auto;
-}
+
 img {
   display: block;
   max-width: 100%;
@@ -137,5 +133,12 @@ svg {
   .weather__parameters svg {
     width: 2rem;
     height: 2rem;
+  }
+}
+@media screen and (min-width: 720px) {
+  main,
+  footer {
+    min-width: 620px;
+    margin: auto;
   }
 }
