@@ -19,7 +19,7 @@ body {
   font-size: 100%;
   font-family: 'Poppins', sans-serif;
   color: #ffffff;
-  background: transparent url(../css/images/background_small.jpg) center center
+  background: transparent url(images/background_small.jpg) center center
     no-repeat;
 }
 main,
@@ -101,7 +101,7 @@ svg {
   display: block;
   width: 1.5rem;
   height: 1.5rem;
-  background: transparent url(../css/images/search.svg) center center no-repeat;
+  background: transparent url(images/search.svg) center center no-repeat;
 }
 [type='text']::placeholder {
   color: #ffffff;
@@ -115,7 +115,7 @@ svg {
 
 @media screen and (min-width: 576px) {
   body {
-    background-image: url(../css/images/background_large.jpg);
+    background-image: url(images/background_large.jpg);
   }
   .weather__header h2 {
     font-size: 4rem;
