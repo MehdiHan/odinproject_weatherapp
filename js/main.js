@@ -32,7 +32,8 @@ const year = [
 const setTime = (date) => {
   const hours = date.getHours();
   const minutes = date.getMinutes();
-  return `${hours} : ${minutes}`;
+  const minutesCondition = minutes < 10 ? `0${minutes}` : minutes;
+  return `${hours} : ${minutesCondition}`;
 };
 const setDate = (date) => {
   const calendarDay = date.getDay();
