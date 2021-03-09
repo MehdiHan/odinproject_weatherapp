@@ -99,6 +99,7 @@ const updateData = async (event) => {
     );
     const weatherWind = document.querySelector('.weather__wind--value');
     const weatherHumidity = document.querySelector('.weather__humidity--value');
+    console.log(responseData.name);
     weatherHeader.textContent = `${responseData.name}, ${responseData.sys.country}`;
     weatherBaseline.textContent = `${responseData.weather[0].description}`;
     weatherIcon.src = `img/${responseData.weather[0].icon}.png`;
